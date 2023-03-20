@@ -19,7 +19,7 @@ function EventItem(props) {
         <li className={classes.item}>
             <img src={'/' + image} alt={title} />
             <div className={classes.content}>
-                <div className={classes.summary}>
+                <div>
                     <h2>{title}</h2>
                     <div className={classes.date}>
                         <DateIcon />
