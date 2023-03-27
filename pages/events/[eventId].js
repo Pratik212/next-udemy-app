@@ -8,6 +8,7 @@ import ErrorAlert from '../../components/ui/error-alert';
 import {getEventById, getFeatureEvents} from "../../helpers/api-util";
 import {execOnce} from "next/dist/shared/lib/utils";
 import Head from "next/head";
+import Comments from "../../components/input/comments";
 
 function EventDetailPage(props) {
     const event = props.selectedEvent;
@@ -36,6 +37,7 @@ function EventDetailPage(props) {
             <EventContent>
                 <p>{event.description}</p>
             </EventContent>
+            <Comments eventId={event.id}/>
         </Fragment>
     );
 }
